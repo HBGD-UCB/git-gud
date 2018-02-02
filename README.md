@@ -12,7 +12,7 @@ expect all analysis code to rely on the data sets stored in the private GHAP
 repositories (it ought to be useless to those unaffiliated with our work).
 
 The HBGDki `git` repo is available for cloning (when on a
-[GHAP](https://oauth.ghap.io/login/auth#/my-account) AWS cluster) via
+[GHAP](https://oauth.ghap.io/login/auth#/my-account) session) via
 
 ```bash
 # ssh user.name@IP
