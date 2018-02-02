@@ -36,6 +36,38 @@ organization ought to be clone-able from any system (provided your GitHub
 credentials are set up properly) -- this means they ought to be accessible when
 logged in to a GHAP session or on your local machine.
 
+---
+
+## "Good Enough" Practices
+
+* When developing code (for data analysis or the software products), work on a
+    new branch that is aptly named with respect to the functionality you hope to
+    add with your work. Commit often, and once you've completed your work,
+    generate a [pull
+    request](https://help.github.com/articles/about-pull-requests/) to the
+    `master` or `develop` branch of the target repo as appropriate.
+* We will be using the ["`git` flow" branching
+    model](http://nvie.com/posts/a-successful-git-branching-model/). This will
+    help keep us on the same page about how and when to create branches as well
+    as how to merge new additions to existing long-lasting
+    branches (e.g., `develop`).
+
+---
+
+## BAD Practices
+
+The most common bad practice in using `git` is to store your version controlled
+repos in a system that provides automatic backups (e.g., Dropbox). DON'T DO
+THIS -- especially for repos on which you expect collaborators to contribute.
+_Why?_ Well, `git` works by storing snapshots (of the changes in a given
+plain-text file between commits) while Dropbox makes near-constant backups. This
+has the potential to lead to a conflicting `HEAD`, a problem that no one wants
+to resolve.
+
+_tl;dr -- please, please don't use Dropbox with the `git` repos._
+
+---
+
 ## Resources
 
 Here are a few useful notes and readings that may be useful in remedying any
@@ -43,7 +75,7 @@ problems that may arise when working with `git`. These range the spectrum from
 applied to fairly technical:
 
 * ["Version Control with `git`" (Software
-    Carpentry](https://swcarpentry.github.io/git-novice/) - a comprehensive
+    Carpentry)](https://swcarpentry.github.io/git-novice/) - a comprehensive
     introduction to the uses of `git` and social coding with GitHub. This is
     aimed towards students and research professionals.
 * ["Happy `git` and GitHub for the useR" (Jenny Bryan,
@@ -64,5 +96,5 @@ applied to fairly technical:
 * ["Elementary `git` with GitHub" (Nima
     Hejazi)](http://nimahejazi.org/posts/git-intro/) - some digest-style notes
     made after reading far more thorough introductions to `git`. These are often
-    useful to me when I need to look up a specific bit of common functionality.
+    useful to me when I need to look up a specific bit of core functionality.
 
